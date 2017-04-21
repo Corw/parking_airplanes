@@ -51,6 +51,10 @@ the parking spot ID (even if it was assigned earlier). And don't worry about mul
   Result should be id of the parking spot. If you execte script again with same plane id you will get same parking spod id.
   If you run it for another plane id, you will get new parking spot id, but the parking spot id for same plane id will always be the same.
   
+   Again, after each call you can check result by executing redis-cli and running following commands:
+  * lrange parking 0 -1
+  * smembers free
+  
   ### Disclaimer
   
   There is likely better way to solve the task. I have never before worked with either Lua or Redis and it took me some reading and testing to get things right.
