@@ -9,7 +9,7 @@ if redis.call("EXISTS", "free") then
 	redis.call("DEL", "free");
 end
 
-local nb_spaces = 5
+local nb_spaces = 100
 
 -- initialize
 for i=0, nb_spaces - 1, 1

@@ -1,6 +1,6 @@
  redis.replicate_commands()
 
-local nb_spaces = 5 
+local nb_spaces = 100 
  
  local function get_assigned_parking(plane_id)
 	
@@ -29,3 +29,11 @@ end
 local plane_id = ARGV[1]
 
 return assign_parking(plane_id)
+
+-- Test with 80 planes
+--local nb_planes = 80
+--for p = 0, nb_planes - 1, 1
+--do
+--	local plane_id = "Plane_" .. p
+--	assign_parking(plane_id)
+--end
