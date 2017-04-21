@@ -1,4 +1,4 @@
- redis.replicate_commands()
+redis.replicate_commands()
 
 local nb_spaces = 100 
  
